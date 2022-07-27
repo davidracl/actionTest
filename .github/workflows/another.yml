@@ -1,9 +1,10 @@
 name: Fakt nevim
 
-
 on: workflow_dispatch
-
 
 jobs:
   Test:
     uses: ./.github/workflows/test.yml
+    with:
+      debug: false
+      
